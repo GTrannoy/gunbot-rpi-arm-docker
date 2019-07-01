@@ -1,8 +1,8 @@
-FROM ubuntu:latest
+FROM alpine:latest
 
-RUN apt-get update && apt-get install -y unzip wget && apt-get clean
+RUN apk update && apk add -y unzip wget
 
-ARG GUNBOT_VERSION=11b906
+ARG GUNBOT_VERSION=1291
 ENV GUNBOT_VERSION ${GUNBOT_VERSION}
 
 RUN mkdir -p /app
@@ -16,6 +16,6 @@ WORKDIR /app/gunbot
 
 VOLUME /app/gunbot/
 
-CMD ./gunthy-linx64
+CMD ./gunthy-arm
 
 EXPOSE 5000
