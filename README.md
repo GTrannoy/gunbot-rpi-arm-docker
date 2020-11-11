@@ -45,5 +45,5 @@ docker run -d -p 5000:5000 --name gb gunbot
 - To create a service in Swarm mode:
 
 ```bash
-docker service create --constraint node.role==worker -p 5050:5000 --network=networkpi --name gunbot --mount type=volume,source=~pi/gunbot_cfg/config.js,destination=/app/config.js gunbot
+docker service create --constraint node.role==worker -p 5000:5000 --network=networkpi --name gunbot --mount type=volume,source=~pi/gunbot_cfg/config.js,destination=/app/config.js gunbot
 ```
