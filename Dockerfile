@@ -1,8 +1,8 @@
-FROM alpine:latest
+FROM debian:latest
 
-RUN apk update && apk add -y unzip wget
+RUN apt update && apt add -y unzip wget
 
-ARG GUNBOT_VERSION=1291
+ARG GUNBOT_VERSION=1839
 ENV GUNBOT_VERSION ${GUNBOT_VERSION}
 
 RUN mkdir -p /app
