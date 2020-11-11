@@ -1,4 +1,4 @@
-FROM armbuild/debian:latest
+FROM debian:buster
 
 RUN apt update
 RUN apt-get -y install unzip wget
