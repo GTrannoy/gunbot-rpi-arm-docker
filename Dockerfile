@@ -1,7 +1,6 @@
 FROM debian:buster
 
-RUN apt update
-RUN apt-get -y install unzip wget
+RUN apt-get update && apt-get install -y unzip wget
 
 ARG GUNBOT_VERSION=1839
 ENV GUNBOT_VERSION ${GUNBOT_VERSION}
