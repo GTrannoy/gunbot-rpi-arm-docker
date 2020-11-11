@@ -1,7 +1,5 @@
 FROM debian:latest
 
-RUN sudo su
-
 RUN apt update
 RUN apt-get -y install unzip wget
 
@@ -22,5 +20,3 @@ VOLUME /app/gunbot/
 CMD ./gunthy-arm
 
 EXPOSE 5000
-
-RUN exit
