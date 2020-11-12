@@ -1,5 +1,7 @@
 FROM balenalib/rpi-raspbian:latest
 
+COPY qemu-arm-static /usr/bin
+
 RUN apt-get update && apt-get install -y unzip wget
 
 ARG GUNBOT_VERSION=1839
