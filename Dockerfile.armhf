@@ -1,4 +1,4 @@
-FROM arm32v6/balenalib/rpi-raspbian:latest
+FROM balenalib/rpi-raspbian:latest
 
 COPY qemu-arm-static /usr/bin
 
