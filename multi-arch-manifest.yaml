@@ -4,9 +4,3 @@ manifests:
     platform:
       architecture: arm
       os: linux
-      variant: v6
-  - image: gtrannoy/gunbot:latest-arm64v8
-    platform:
-      architecture: arm64
-      os: linux
-      variant: v8
