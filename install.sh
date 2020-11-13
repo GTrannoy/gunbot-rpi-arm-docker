@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function get_download_version {
-echo $GUNBOT_VERSION | tr -d .
+echo $GUNBOT_VERSION
 }
 
 DOWNLOAD_VERSION=$(get_download_version)
