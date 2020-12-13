@@ -1,0 +1,23 @@
+FROM balenalib/rpi-raspbian:latest
+
+COPY qemu-arm-static /usr/bin
+
+RUN apt-get update && apt-get install -y unzip wget
+
+ARG GUNBOT_VERSION=v13
+ENV GUNBOT_VERSION ${GUNBOT_VERSION}
+
+RUN mkdir -p /app
+WORKDIR /app
+
+COPY install.sh .
+
+RUN ./install.sh
+
+WORKDIR /app/gunbot
+
+VOLUME /app/gunbot/
+
+CMD ./gunthy-arm
+
+EXPOSE 5000
