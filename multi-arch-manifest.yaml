@@ -1,9 +1,12 @@
-image: gtrannoy/gunbot:latest gtrannoy/gunbot:latest-armhf-v7 gtrannoy/gunbot:latest-armhf-v6
+image: gtrannoy/gunbot:latest-armhf-v7
 manifests:
   - image: gtrannoy/gunbot:latest-armhf-v7
     platform:
       architecture: arm64
       os: linux
+      
+image: gtrannoy/gunbot:latest-armhf-v6
+manifests:
   - image: gtrannoy/gunbot:latest-armhf-v6
     platform:
       architecture: arm
